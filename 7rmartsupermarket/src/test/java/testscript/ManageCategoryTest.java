@@ -24,7 +24,7 @@ public class ManageCategoryTest extends Base {
 		String cate = faker.generateCategory();
 		category.clickOnManageCategory();
 		category.clickOnNewButton();
-		//String cate = ExcelUtility.getStringData(1, 0, "category");
+		// String cate = ExcelUtility.getStringData(1, 0, "category");
 		category.addCategory(cate);
 		category.discount();
 		category.choosefile();

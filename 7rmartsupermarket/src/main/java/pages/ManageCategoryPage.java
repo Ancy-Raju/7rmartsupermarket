@@ -61,7 +61,6 @@ public class ManageCategoryPage {
 
 	public boolean isAlertDisplayed() {
 		return alert.isDisplayed();
-		
 
 	}
 

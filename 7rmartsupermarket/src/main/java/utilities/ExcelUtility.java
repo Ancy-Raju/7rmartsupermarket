@@ -14,28 +14,26 @@ public class ExcelUtility {
 	static FileInputStream f;
 	static XSSFWorkbook w;
 	static XSSFSheet s;
-	public static String getStringData(int a, int b, String sheet) throws IOException 
-	{
+
+	public static String getStringData(int a, int b, String sheet) throws IOException {
 		f = new FileInputStream(Constant.TESTDATA);
 		w = new XSSFWorkbook(f);
 		s = w.getSheet(sheet);
 		XSSFRow r = s.getRow(a);
 		XSSFCell c = r.getCell(b);
 		return c.getStringCellValue();
-		
-		
-				
+
 	}
-	public static int getIntegerData(int a, int b,String sheet) throws IOException 
-	{
-	f = new FileInputStream(Constant.TESTDATA);
-			w = new XSSFWorkbook(f);
-			s = w.getSheet(sheet);
-			XSSFRow r = s.getRow(a);
-			XSSFCell c = r.getCell(b);
-			int x = (int) c.getNumericCellValue();
-			return x;
-			
+
+	public static int getIntegerData(int a, int b, String sheet) throws IOException {
+		f = new FileInputStream(Constant.TESTDATA);
+		w = new XSSFWorkbook(f);
+		s = w.getSheet(sheet);
+		XSSFRow r = s.getRow(a);
+		XSSFCell c = r.getCell(b);
+		int x = (int) c.getNumericCellValue();
+		return x;
+
 	}
 
 }

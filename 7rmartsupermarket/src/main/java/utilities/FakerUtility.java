@@ -3,34 +3,34 @@ package utilities;
 import com.github.javafaker.Faker;
 
 public class FakerUtility {
-		Faker faker = new Faker();
+	Faker faker = new Faker();
 
-		public String creatARandomFirstName() {
+	public String creatARandomFirstName() {
 
-			return faker.name().firstName();
+		return faker.name().firstName();
 
-		}
+	}
 
-		public String creatARandomLastName() {
+	public String creatARandomLastName() {
 
-			return faker.name().lastName();
+		return faker.name().lastName();
 
-		}
+	}
 
-		public String generateAddress() {
+	public String generateAddress() {
 
-			return faker.address().fullAddress();
+		return faker.address().fullAddress();
 
-		}
+	}
 
-		public String generateEmail() {
+	public String generateEmail() {
 
-			return faker.internet().emailAddress();
+		return faker.internet().emailAddress();
 
-		}
-		public String generateCategory() {
-	        return faker.commerce().department();
-	    }
-	
+	}
+
+	public String generateCategory() {
+		return faker.commerce().department();
+	}
 
 }
