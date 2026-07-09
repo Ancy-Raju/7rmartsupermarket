@@ -14,6 +14,7 @@ public class ManageAdminUserPage {
 	@FindBy(xpath="//input[@id='password']")WebElement password;
 	@FindBy(xpath="//select[@id='user_type']")WebElement usertype;
 	@FindBy(xpath="//button[@name='Create']")WebElement save;
+	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alert;
 	public ManageAdminUserPage(WebDriver driver)
 	{
 		this.driver = driver;
@@ -44,6 +45,11 @@ public class ManageAdminUserPage {
 	public void clickOnSaveButton()
 	{
 		save.click();
+	}
+	public boolean isAlertDisplayed() {
+	
+		return alert.isDisplayed();
+		
 	}
 
 }

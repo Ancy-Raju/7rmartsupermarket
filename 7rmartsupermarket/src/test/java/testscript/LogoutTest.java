@@ -2,6 +2,7 @@ package testscript;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
@@ -21,6 +22,8 @@ public class LogoutTest extends Base {
 		LogoutPage logoutpage =  new LogoutPage(driver);
 		logoutpage.clickonAdminButton();
 		logoutpage.Clickonlogoutbutton();
+		boolean loginpage1 = logoutpage.isLoginPageDisplayed();
+		Assert.assertTrue(loginpage1);
 		
 		
 		

@@ -2,6 +2,7 @@ package testscript;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
@@ -19,11 +20,14 @@ public class ManageNewsTest extends Base {
 		loginpage.enterPassword(passwordvalue);
 		loginpage.signIn();
 		ManageNewsPage news = new ManageNewsPage(driver);
+		news.clickOnmanageNews();
 		news.clickOnManageNewsButton();
 		news.clickOnNewButton();
 		String newnews=ExcelUtility.getStringData(1, 0,"news");
 		news.addnews(newnews);
 		news.clickOnSaveButton();
+		boolean alert = news.isAlertDisplayed();
+		Assert.assertTrue(alert);
 		
 		}
 

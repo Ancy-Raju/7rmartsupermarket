@@ -1,6 +1,8 @@
 package testscript;
 
 import java.io.IOException;
+
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 import pages.ManageAdminUserPage;
@@ -26,6 +28,9 @@ public class ManageAdminUserTest  extends Base{
 		String type = ExcelUtility.getStringData(1, 2,"adminuser");
 		adminuser.enterUsertype(type);
 		adminuser.clickOnSaveButton();
+		boolean alert = adminuser.isAlertDisplayed();
+		Assert.assertTrue(alert);
+		
 		
 	}
 
