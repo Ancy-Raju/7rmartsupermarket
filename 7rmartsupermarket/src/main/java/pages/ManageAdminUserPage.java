@@ -20,7 +20,7 @@ public class ManageAdminUserPage {
 	WebElement usertype;
 	@FindBy(xpath = "//button[@name='Create']")
 	WebElement save;
-	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
 	WebElement alert;
 
 	public ManageAdminUserPage(WebDriver driver) {

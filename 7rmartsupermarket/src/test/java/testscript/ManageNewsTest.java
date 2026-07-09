@@ -10,7 +10,7 @@ import pages.ManageNewsPage;
 import utilities.ExcelUtility;
 
 public class ManageNewsTest extends Base {
-	@Test
+	@Test (retryAnalyzer = retry.Retry.class)
 	public void manageNews() throws IOException
 	{
 		String usernamevalue = ExcelUtility.getStringData(1, 0,"Login Page");

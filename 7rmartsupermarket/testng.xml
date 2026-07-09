@@ -6,8 +6,8 @@
       <class name="testscript.ManageCategoryTest"/>
       <class name="testscript.ManageAdminUserTest"/>
       <class name="testscript.ManageNewsTest"/>
-      <class name="testscript.UpdateContactTest"/>
-      <class name="testscript.ManageFooterTest"/>
+      <class name="testscript.ManageDeliveryBoyTest"/>
+      <class name="testscript.ManageCodTest"/>
       <class name="testscript.LogoutTest"/>
       <class name="testscript.LoginTest"/>
     </classes>

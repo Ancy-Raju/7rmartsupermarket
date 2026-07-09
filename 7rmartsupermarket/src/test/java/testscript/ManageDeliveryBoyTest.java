@@ -10,7 +10,7 @@ import pages.ManageDeliveryBoyPage;
 import utilities.ExcelUtility;
 
 public class ManageDeliveryBoyTest extends Base {
-	@Test
+	@Test (retryAnalyzer = retry.Retry.class)
 	public void manageDeliveryBoy() throws IOException {
 	
 	String usernamevalue = ExcelUtility.getStringData(1, 0,"Login Page");

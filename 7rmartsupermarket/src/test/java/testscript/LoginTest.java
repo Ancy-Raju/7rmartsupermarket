@@ -9,7 +9,7 @@ import pages.LoginPage;
 import utilities.ExcelUtility;
 
 public class LoginTest extends Base {
-	@Test
+	@Test (retryAnalyzer = retry.Retry.class, groups = { "Regression" })
 	public void verifyTheUserIsAbleToLoginWithValidCredentials() throws IOException {
 		String usernamevalue = ExcelUtility.getStringData(1, 0, "Login Page");
 		String passwordvalue = ExcelUtility.getStringData(1, 1, "Login Page");

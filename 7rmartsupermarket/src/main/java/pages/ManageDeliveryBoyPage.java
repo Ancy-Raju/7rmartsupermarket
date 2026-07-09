@@ -17,7 +17,7 @@ public class ManageDeliveryBoyPage {
 	@FindBy(xpath="//input[@id='username']")WebElement username;
 	@FindBy(xpath="//input[@id='password']")WebElement password;
 	@FindBy(xpath="//button[@type='submit']")WebElement savebutton;
-	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alert;
+	@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']")WebElement alert;
 	public ManageDeliveryBoyPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver,this);

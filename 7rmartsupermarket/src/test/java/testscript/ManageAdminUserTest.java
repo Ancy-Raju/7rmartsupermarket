@@ -9,7 +9,7 @@ import pages.ManageAdminUserPage;
 import utilities.ExcelUtility;
 
 public class ManageAdminUserTest  extends Base{
-	@Test
+	@Test (retryAnalyzer = retry.Retry.class)
 	public void adminUser() throws IOException
 	{
 		String usernamevalue = ExcelUtility.getStringData(1, 0,"Login Page");

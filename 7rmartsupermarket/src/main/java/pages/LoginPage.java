@@ -15,7 +15,7 @@ public class LoginPage {
 	WebElement signin;
 	@FindBy(xpath = "//p[text()='Dashboard']")
 	WebElement dashboard;
-	@FindBy(xpath = "div[contains(@class,'alert-dismissible')]")
+	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
 	WebElement alert;
 
 	public LoginPage(WebDriver driver) {
@@ -47,6 +47,7 @@ public class LoginPage {
 	public boolean isAlertDisplayed() {
 
 		return alert.isDisplayed();
+		
 
 	}
 
