@@ -2,15 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-09T18:59:48 IST" name="Suite" finished-at="2026-07-09T18:59:57 IST" duration-ms="8257">
+  <suite started-at="2026-07-16T11:46:55 IST" name="Suite" finished-at="2026-07-16T11:47:14 IST" duration-ms="18322">
     <groups>
-      <group name="Regression">
-        <method signature="LoginTest.verifyTheUserIsAbleToLoginWithValidCredentials()[pri:0, instance:testscript.LoginTest@7586beff]" name="verifyTheUserIsAbleToLoginWithValidCredentials" class="testscript.LoginTest"/>
-      </group> <!-- Regression -->
     </groups>
-    <test started-at="2026-07-09T18:59:48 IST" name="Test" finished-at="2026-07-09T18:59:57 IST" duration-ms="8257">
-      <class name="testscript.LoginTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@7586beff]" started-at="2026-07-09T18:59:48 IST" name="initializeBrowser" finished-at="2026-07-09T18:59:54 IST" duration-ms="5864" status="PASS">
+    <test started-at="2026-07-16T11:46:55 IST" name="Test" finished-at="2026-07-16T11:47:14 IST" duration-ms="18322">
+      <class name="testscript.ManageNewsTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscript.ManageNewsTest@14bdbc74]" started-at="2026-07-16T11:46:56 IST" name="initializeBrowser" finished-at="2026-07-16T11:47:09 IST" duration-ms="13326" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,15 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="verifyTheUserIsAbleToLoginWithValidCredentials()[pri:0, instance:testscript.LoginTest@7586beff]" started-at="2026-07-09T18:59:54 IST" name="verifyTheUserIsAbleToLoginWithValidCredentials" finished-at="2026-07-09T18:59:56 IST" duration-ms="2156" status="PASS">
+        <test-method signature="manageNews()[pri:0, instance:testscript.ManageNewsTest@14bdbc74]" started-at="2026-07-16T11:47:09 IST" name="manageNews" finished-at="2026-07-16T11:47:13 IST" duration-ms="4119" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTheUserIsAbleToLoginWithValidCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testscript.LoginTest@7586beff]" started-at="2026-07-09T18:59:56 IST" name="closeBrowser" finished-at="2026-07-09T18:59:57 IST" duration-ms="165" status="PASS">
+        </test-method> <!-- manageNews -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@14bdbc74]" started-at="2026-07-16T11:47:13 IST" name="browserQuit" finished-at="2026-07-16T11:47:14 IST" duration-ms="770" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manageNews status=SUCCESS method=ManageNewsTest.manageNews()[pri:0, instance:testscript.ManageNewsTest@14bdbc74] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testscript.LoginTest -->
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testscript.ManageNewsTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

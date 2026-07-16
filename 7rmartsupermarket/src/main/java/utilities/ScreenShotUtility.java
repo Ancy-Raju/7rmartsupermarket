@@ -14,16 +14,14 @@ public class ScreenShotUtility {
 	public void getScreenShot(WebDriver driver, String failedTestCase) throws IOException {
 		TakesScreenshot scrShot = (TakesScreenshot) driver; // TakesScreenshot capture the current situation of the
 															// browser
-		File screenShot = scrShot.getScreenshotAs(OutputType.FILE);
-		String timeStamp = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss").format(new Date());
-		File f1 = new File(System.getProperty("user.dir") + "//OutputScreenShot"); //// OutputScreenShot"-the scrrenshot
-																					//// is generated in this folder ie
-																					//// the loctn only
+		File screenShot = scrShot.getScreenshotAs(OutputType.FILE);//capture the scrrenshot store it temporary as a file
+		String timeStamp = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss").format(new Date());//create date and time
+		File f1 = new File(System.getProperty("user.dir") + "//OutputScreenShot"); 
 		if (!f1.exists()) {
-			f1.mkdirs(); // if dir not exists,make it
+			f1.mkdirs(); // if dir not exists,make it create folder if it does not exist
 		}
-		String destination = System.getProperty("user.dir") + "//outputScreenShot//" + failedTestCase + timeStamp
-				+ ".png";
+		String destination = System.getProperty("user.dir") + "//OutputScreenShot//" + failedTestCase + timeStamp
+				+ ".png";// decide final screenshot path
 		File finalDestination = new File(destination);
 		FileHandler.copy(screenShot, finalDestination); // FileHandler-class
 	}
